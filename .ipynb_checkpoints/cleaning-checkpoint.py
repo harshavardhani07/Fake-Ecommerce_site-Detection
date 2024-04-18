@@ -84,4 +84,6 @@ for j in data.index:
 
 data_new = pd.concat(dfdict.values(), ignore_index=True)
 data_new.drop(['productsPassed','productsFailed'], axis=1, inplace=True)
-# Reset index of data_new
+print(data_new.describe())
+
+
