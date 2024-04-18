@@ -10,6 +10,8 @@ if 'identifierHash' in data.columns:
     data.drop('identifierHash', axis=1, inplace=True)
 if 'countryCode' in data.columns:
     data.drop('countryCode', axis=1, inplace=True)
+if 'civilityTitle' in data.columns:
+    data.drop('civilityTitle', axis=1, inplace=True)
 
 # Identify numeric columns (int and float types)
 numeric_columns = data.select_dtypes(include=['int64', 'float64']).columns
