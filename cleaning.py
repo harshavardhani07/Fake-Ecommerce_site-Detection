@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.preprocessing import OneHotEncoder, LabelEncoder
 
-data = pd.read_csv("raw_data.csv")
+data = pd.read_csv("C:/Users/nikhitha/OneDrive - Indian Institute of Technology Guwahati/Documents/sem5/CS_361/CS-361/new/Fake-Ecommerce_site-Detection/raw_data.csv")
 #remove duplicate columns
 if 'identifierHash' in data.columns:
     data.drop('identifierHash', axis=1, inplace=True)
